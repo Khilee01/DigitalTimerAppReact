@@ -1,0 +1,204 @@
+/* Write your CSS here */
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto';
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to right, #ffffff, #cffcf1, #defafe);
+}
+.DigitalTimerHg {
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.timerBg {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+  background-size: cover;
+  display: flex;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+}
+.tickingClockBg {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 16px 0px #bfbfbf;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.timer {
+  color: #00d9f5;
+  font-size: 4rem;
+  margin: 0px;
+}
+.timerStatus {
+  margin-top: 0%;
+  color: #0f172a;
+  font-size: 0.8rem;
+}
+.pauseResetLimitContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pauseResetContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.pauseResetContainer button {
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: transparent;
+  margin-right: 2vw;
+  margin-left: 2vw;
+}
+
+.pauseResetContainer img {
+  height: 40px;
+  width: fit-content;
+}
+
+.incrementDecreementBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.styleTimeLimit {
+  color: #0f172a;
+  font-weight: bold;
+}
+.styleTimeLimit p {
+  color: #1e293b;
+}
+.numericalTimerLimit {
+  background-image: linear-gradient(to right, #89e5ce, #91e0ec);
+  background-size: cover;
+  border-radius: 10px;
+  height: 40px;
+  text-align: center;
+  width: 80px;
+  font-size: large;
+  color: #0f172a;
+  padding: 10px;
+}
+.numericalTimerLimitbutton {
+  background-color: transparent;
+  border: none;
+  font-style: bold;
+  height: 40px;
+  font-size: large;
+}
+@media (max-width: 767px) {
+  .functionalPartsMainContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .timerBg {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+  }
+  .tickingClockBg {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 16px 0px #bfbfbf;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .timer {
+    color: #00d9f5;
+    font-size: 2rem;
+    margin: 0px;
+  }
+  .pauseResetContainer button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: transparent;
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+
+  .pauseResetContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+@media (min-width: 768px) {
+  .functionalPartsMainContainer {
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .timerBg {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/digital-timer-elapsed-bg.png');
+    background-size: cover;
+    display: flex;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+  }
+  .tickingClockBg {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 16px 0px #bfbfbf;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .timer {
+    color: #00d9f5;
+    font-size: 4rem;
+    margin: 0px;
+  }
+  .pauseResetContainer button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: transparent;
+    margin-right: 2vw;
+    margin-left: 2vw;
+  }
+  .pauseResetContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+}
