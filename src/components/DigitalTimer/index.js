@@ -13,8 +13,8 @@ class DigitalTimer extends Component {
   }
 
   DecreementInterval = () => {
-    const {isTimerRunning} = this.state
-    if (!isTimerRunning) {
+    const {isTimerRunning, timerLimit} = this.state
+    if (!isTimerRunning && timerLimit >= 1) {
       this.setState(prevState => ({
         timerLimit: prevState.timerLimit - 1,
         minutes: prevState.timerLimit - 1,
@@ -82,14 +82,14 @@ class DigitalTimer extends Component {
 
   Reset = () => {
     this.clearTimerInterval()
-    this.setState({
+    this.setState(prevState => ({
       isTimerRunning: false,
-      timerLimit: 25,
-      minutes: 25,
+      timerLimit: prevState.timerLimit,
+      minutes: prevState.timerLimit,
       seconds: 0,
       timeElapsedInSeconds: 0,
-      remainingTimeInSeconds: 25 * 60,
-    })
+      remainingTimeInSeconds: prevState.timerLimit * 60,
+    }))
   }
 
   render() {
